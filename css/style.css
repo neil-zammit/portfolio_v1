@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /* overflow: hidden; */
+  overflow: hidden;
   color: #fff;
   text-align: center;
 }
@@ -48,6 +48,7 @@ a {
 a:hover {
   /* color: #2b2b28; */
   color: #e3b04b;
+  opacity: 1;
 }
 
 .menu {
@@ -105,6 +106,11 @@ a:hover {
   margin-right: 1rem;
 }
 
+.about-icon:hover {
+  transform: rotate(-360deg);
+  transition: all 1s ease-in-out 0s;
+}
+
 .html {
   color: #f16529;
 }
@@ -134,13 +140,13 @@ a:hover {
   width: 100%;
   height: 100vh;
   /* height: 100%; */
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
   background: url('../img/bg-img-mywork.jpg') no-repeat center/cover;
 }
 
 #my-work-title {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,6 +156,10 @@ a:hover {
 .mywork-title {
   /* tocounteract cross margin and align title center */
   margin-left: 30%;
+}
+
+.mywork-text {
+  margin-top: 0;
 }
 
 .grid-container {
@@ -185,8 +195,10 @@ img:hover {
   top: 100%;
   right: 53%;
   font-size: 2rem;
-  color: #1089ff;
+  /* color: #1089ff; */
   /* color: #a0c334; */
+  color: #e3b04b;
+  opacity: 0.7;
 }
 
 .code {
@@ -196,5 +208,66 @@ img:hover {
   right: 43%;
   font-size: 2rem;
   /* color: #ce2e6c; */
-  color: #cf3030;
+  /* color: #cf3030; */
+  color: #e3b04b;
+  opacity: 0.7;
+}
+
+/* Contact Section  */
+/* About Section  */
+.contact {
+  /* border: 1px solid red; */
+  text-align: center;
+  opacity: 0;
+  margin-top: 200px;
+}
+
+/* Media Queries  */
+@media (max-width: 1200px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  /* My Work Section  */
+  #my-work {
+    height: 100%;
+  }
+
+  .grid-container {
+    display: block;
+    margin: 2rem 20px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .grid-element {
+    margin-bottom: 2rem;
+  }
+
+  .link {
+    /* Relative to grid element  */
+    position: absolute;
+    top: 45%;
+    right: 53%;
+  }
+
+  .code {
+    /* Relative to grid element  */
+    position: absolute;
+    top: 45%;
+    right: 43%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Adjust contact and about section  */
+  #showcase {
+    display: inline-block;
+  }
+
+  .showcase-content {
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
