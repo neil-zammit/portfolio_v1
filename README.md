@@ -4,8 +4,8 @@ My first developer portfolio
 
 Checklist:
 
-[] My Work Page / Section
-
 [] Contact Page / Section
+
+[] Make Responsive
 
 [] Credits

@@ -34,3 +34,8 @@ crossBtn.addEventListener('click', () => {
   // Bring About section to initial position and render invisible
   TweenMax.to('.about', 1.5, { y: 420, opacity: 0 });
 });
+
+// Init Smooth Scroll for all anchor tags
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 3000
+});
