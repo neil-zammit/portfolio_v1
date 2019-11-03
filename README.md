@@ -2,10 +2,12 @@
 
 My first developer portfolio
 
-Checklist:
+Free Stock Images obtained from Pixabay:
 
-[] Contact Page / Section
+https://pixabay.com/photos/shore-coast-shoreline-waves-ocean-336578/
 
-[] Make Responsive
+https://pixabay.com/photos/surf-waves-shore-ocean-beach-sea-455761/
 
-[] Credits
+Animations: https://greensock.com/gsap/
+
+Smooth Scroll: https://github.com/cferdinandi/smooth-scroll
