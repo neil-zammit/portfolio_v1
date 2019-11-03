@@ -13,7 +13,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: url('/img/bg-img-filter.jpg') no-repeat center/cover;
+  background: url(../img/bg-img-filter.jpg) no-repeat center/cover;
 }
 
 .showcase-content {
